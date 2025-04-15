@@ -15,29 +15,66 @@
 
 a {
   text-decoration: none;
+  color: black;
 }
 
+/* H1 used for Treact by logo. */
 h1 {
   font-size: 24px;
   font-weight: 900;
 }
 
+/* H2 used for section titles */
+h2 {
+  font-size: 48px;
+}
+
+button {
+  font-size: 14px;
+  padding: 10px 32px;
+  border-radius: 500px;
+  border: none;
+  background-color: var(--theme-color);
+  color: white;
+}
+
 .row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 li {
   list-style: none;
+  font-weight: bold;
+}
+
+.theme__color {
+  color: var(--theme-color);
+}
+
+.white__text {
+  color: white;
+  font-weight: bold;
 }
 
 /* color: var(--theme-color); */
 /* LANDING */
 
+#landing {
+  padding: 0 32px;
+}
 
+.nav__row {
+  height: 60px;
+}
 .nav__logo--wrapper {
-  
+  display: flex;
+  align-items: center;
 }
 .nav__logo--img {
   width: 40px;
@@ -45,11 +82,84 @@ li {
 }
 
 .nav__menu {
-  width: 50%;
+  /* width: 50%; */
 }
 
 .nav__menu--list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+.nav__menu--link {
+  padding-top: 4px;
+  margin: 0 24px;
+}
+.nav__menu--link--primary {
+  margin: 0 24px 0 48px;
+}
+
+.logo__word {
+  margin-left: 16px;
+}
+
+.landing__row {
+  padding: 100px 0;
+}
+
+.landing__header--wrapper {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.landing__header--para {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 32px 0;
+  
+}
+
+/* wrapper */
+.landing__email--wrapper {
+  width: 100%;
+  position: relative;
+  height: 68px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.landing__email--input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 192px 20px 32px;
+  border-radius: 500px;
+  border-color: rgb(229, 231, 235);
+}
+
+
+.landing__email--btn {
+  z-index: 2;
+
+  height: calc(100% - 16px);
+}
+
+.landing__customers--img {
+  width: 80%;
+}
+
+.landing__img--wrapper {
+  width: 60%;
+}
+
+.landing__img {
+  width: 100%;
+  height: 100%;
 }
