@@ -358,3 +358,37 @@ li {
 }
 
 /* Ready to clean up the steps! 4/18 */
+
+.step__wrapper {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+}
+  
+  .step__description {
+    width: 100%;
+    max-width: 320px;
+    align-items: start;
+    margin-left: 24px;
+  }
+
+  .step__number {
+    color: #cbd5e0;
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .step__title {
+    font-size: 24px;
+    font-weight: 600;
+
+  }
+
+  .step__para {
+    font-size: 14px;
+    line-height: 2;
+    margin-top: 12px;
+    font-weight: 500;
+  }
+
+  
