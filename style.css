@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --theme-color: rgba(2, 77, 53, 1);
@@ -132,7 +132,6 @@ li {
   font-size: 18px;
   line-height: 1.5;
   margin: 32px 0;
-
 }
 
 /* wrapper */
@@ -146,8 +145,7 @@ li {
   align-items: center;
 }
 
-
-.landing__email--input{
+.landing__email--input {
   position: absolute;
   top: 0;
   left: 0;
@@ -156,7 +154,6 @@ li {
   border-radius: 500px;
   border-color: rgb(229, 231, 235);
 }
-
 
 .landing__email--btn {
   z-index: 2;
@@ -170,7 +167,6 @@ li {
 
 .landing__img--wrapper {
   width: 60%;
-
 }
 
 .landing__img {
@@ -245,7 +241,7 @@ li {
 }
 
 .service {
-  width: calc(100%/3);
+  width: calc(100% / 3);
   padding: 32px 24px;
   display: flex;
   flex-direction: row;
@@ -290,7 +286,6 @@ li {
 .quality__header--wrapper {
   width: 50%;
   margin: 0 64px 0 0;
-
 }
 
 .quality__img--wrapper {
@@ -298,11 +293,9 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 .quality__img {
   width: calc(100% - 24px);
-
 }
 
 .quality__header--sub-title {
@@ -345,7 +338,6 @@ li {
   display: flex;
   flex-direction: column;
   padding: 32px 0 32px 64px;
-
 }
 
 .steps__container {
@@ -364,31 +356,131 @@ li {
   display: flex;
   flex-direction: row;
 }
-  
-  .step__description {
-    width: 100%;
-    max-width: 320px;
-    align-items: start;
-    margin-left: 24px;
-  }
 
-  .step__number {
-    color: #cbd5e0;
-    font-size: 32px;
-    font-weight: 600;
-  }
+.step__description {
+  width: 100%;
+  max-width: 320px;
+  align-items: start;
+  margin-left: 24px;
+}
 
-  .step__title {
-    font-size: 24px;
-    font-weight: 600;
+.step__number {
+  color: #cbd5e0;
+  font-size: 32px;
+  font-weight: 600;
+}
 
-  }
+.step__title {
+  font-size: 24px;
+  font-weight: 600;
+}
 
-  .step__para {
-    font-size: 14px;
-    line-height: 2;
-    margin-top: 12px;
-    font-weight: 500;
-  }
+.step__para {
+  font-size: 14px;
+  line-height: 2;
+  margin-top: 12px;
+  font-weight: 500;
+}
 
-  
+/* Pricing PLans */
+
+#pricing {
+  padding: 96px 0;
+}
+
+.pricing__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing__header--sub-title {
+  margin: 16px 0;
+  font-weight: 900;
+}
+
+.pricing__header--para {
+  font-size: 18px;
+  line-height: 1.65;
+  color: #7c8ba1;
+  font-weight: 500;
+  max-width: 576px;
+}
+
+.pricing__plans {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricing__plan {
+  width: 100%;
+  max-width: 320px;
+  margin: 64px 32px 0 0;
+  position: relative;
+  z-index: 100;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.pricing__plan--stripe {
+  /* background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%); */
+  /* Set up the background with nth child stuff. Start with Black for now. */
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+}
+
+.plan__top--wrapper,
+.plan__bottom--wrapper,
+.plan__middle--wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+
+.plan__middle--wrapper {
+  border-top: 2px solid #e2e8f0;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.plan__top--title {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.plan__top--price,
+.plan__top--title,
+.plan__top--sub-title {
+  font-weight: bold;
+  line-height: 1.625;
+}
+
+.plan__top--price {
+  font-size: 48px;
+  margin: 4px 0;
+}
+
+.plan__top--sub-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #a0aec0;
+}
+
+/* nth child for the list? */
+/* OH. it is on the li tags, not the ul */
+/* Which doesn't make parental sense. */
+.plan__item:first-child {
+  font-size: 24px;
+}
