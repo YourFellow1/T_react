@@ -40,6 +40,7 @@ h3 {
 
 button {
   font-size: 14px;
+  font-weight: bold;
   padding: 10px 32px;
   border-radius: 500px;
   border: none;
@@ -147,8 +148,6 @@ li {
 
 .landing__email--input {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   padding: 20px 192px 20px 32px;
   border-radius: 500px;
@@ -392,6 +391,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .pricing__header--sub-title {
@@ -419,7 +419,7 @@ li {
 
 .pricing__plan {
   width: 100%;
-  max-width: 320px;
+  max-width: 364px;
   margin: 64px 32px 0 0;
   position: relative;
   z-index: 100;
@@ -432,7 +432,7 @@ li {
 .pricing__plan--stripe {
   /* background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%); */
   /* Set up the background with nth child stuff. Start with Black for now. */
-  background: black;
+  background: var(--theme-color);
   position: absolute;
   top: 0;
   left: 0;
@@ -447,6 +447,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   padding: 32px;
 }
 
@@ -481,6 +482,72 @@ li {
 /* nth child for the list? */
 /* OH. it is on the li tags, not the ul */
 /* Which doesn't make parental sense. */
+
+.plan__item {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 20px;
+  color: #718096;
+}
 .plan__item:first-child {
   font-size: 24px;
+  color: #242424;
+}
+
+.pricing__plan:nth-child(even) {
+  background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+  color: white;
+}
+
+.pricing__plan:nth-child(2) * {
+  color: white;
+}
+
+.pricing__plan:nth-child(2) .pricing__plan--stripe {
+  background: none;
+}
+
+.pricing__plan:nth-child(3) .pricing__plan--stripe {
+  background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%)
+}
+
+  .pricing__plan:nth-child(3) .plan__btn {
+  background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%)
+}
+
+.pricing__plan:nth-child(2) .plan__btn {
+  color: var(--theme-color);
+  background: white;
+}
+
+
+/* footer */
+
+footer {
+  padding: 96px 0;
+  margin: 0 auto;
+  background-color: var(--theme-color);
+}
+
+.footer__row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.links {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.link {
+  width: calc(100%/5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
